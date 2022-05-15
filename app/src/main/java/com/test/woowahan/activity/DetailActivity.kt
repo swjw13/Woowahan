@@ -5,6 +5,8 @@ import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.CheckBox
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -67,6 +69,12 @@ class DetailActivity: AppCompatActivity() {
                 CoroutineScope(Dispatchers.Main).launch {
                     binding.subImageView.setImageBitmap(bitmap)
                 }
+            }
+            for (i in specific_menu?.optionGroups?.get(1)!!.options){
+                val checkBox = CheckBox(this@DetailActivity).apply {
+                    this.text = i.name
+                }
+                binding.specificAdditionalLayout.addView(checkBox)
             }
         }
 

@@ -80,77 +80,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <RelativeLayout
-                            android:layout_width="match_parent"
+                        <RadioButton
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:text="@string/small_kor" />
 
-                            <RadioButton
-                                android:id="@+id/specific_small"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:padding="5dp"
-                                android:text="@string/small_kor" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignTop="@id/specific_small"
-                                android:layout_alignBottom="@id/specific_small"
-                                android:layout_alignParentEnd="true"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="20,000원" />
-
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
+                        <RadioButton
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:text="@string/middle_kor" />
 
-                            <RadioButton
-                                android:id="@+id/specific_middle"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:padding="5dp"
-                                android:text="@string/middle_kor" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignTop="@id/specific_middle"
-                                android:layout_alignBottom="@id/specific_middle"
-                                android:layout_alignParentEnd="true"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="20,000원" />
-
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
+                        <RadioButton
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <RadioButton
-                                android:id="@+id/specific_big"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:padding="5dp"
-                                android:text="@string/big_kor" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignTop="@id/specific_big"
-                                android:layout_alignBottom="@id/specific_big"
-                                android:layout_alignParentEnd="true"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="20,000원" />
-
-                        </RelativeLayout>
+                            android:text="@string/big_kor" />
 
                     </RadioGroup>
 
@@ -163,6 +106,7 @@
                     android:orientation="vertical" />
 
                 <LinearLayout
+                    android:id="@+id/specific_additional_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -174,30 +118,7 @@
                         android:text="추가 선택 (최대 3개 까지)"
                         android:textStyle="bold" />
 
-                    <CheckBox
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="막국수" />
 
-                    <CheckBox
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="막국수" />
-
-                    <CheckBox
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="막국수" />
-
-                    <CheckBox
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="막국수" />
-
-                    <CheckBox
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="막국수" />
 
                 </LinearLayout>
 
